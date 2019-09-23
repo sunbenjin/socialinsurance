@@ -33,7 +33,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @Slf4j
 public class LogController extends BaseController {
     @Autowired
-    private SysLogMapper logMapper;
+    public SysLogMapper logMapper;
 
     @GetMapping(value = "showLog")
     public String showMenu(Model model) {

@@ -83,7 +83,7 @@ public class WeixinPermissionFilter extends AuthenticatingFilter {
         String code = httpRequest.getParameter("code");
         if (StringUtils.isBlank(code)) {
             try {
-                String url = wxService.oauth2buildAuthorizationUrl("http://litaolin.nat300.top/" + httpRequest.getRequestURI(), "snsapi_userinfo", "");
+                String url = wxService.oauth2buildAuthorizationUrl("http://www.bjmot.cn/" + httpRequest.getRequestURI(), "snsapi_userinfo", "");
                 HttpServletResponse httpResponse = WebUtils.toHttp(response);
                 httpResponse.sendRedirect(url);
                 // WebUtils.issueRedirect(request, response, url);
@@ -93,7 +93,7 @@ public class WeixinPermissionFilter extends AuthenticatingFilter {
             return false;
         }
         try {
-            WebUtils.issueRedirect(request, response, "http://litaolin.nat300.top/wx/message/fail");
+            WebUtils.issueRedirect(request, response, "http://www.bjmot.cn/wx/message/fail");
             return false;
         } catch (IOException e1) {
             e1.printStackTrace();

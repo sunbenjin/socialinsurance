@@ -19,7 +19,7 @@ import java.net.URL;
 import static me.chanjar.weixin.common.api.WxConsts.MenuButtonType;
 
 /**
- *  http://litaolin.nat300.top/wx/menu/wx72c8bfbb4f8fc348/create
+ *  http://http://www.bjmot.cn/wx/menu/wx72c8bfbb4f8fc348/create
  *
  * @author Binary Wang(https://github.com/binarywang)
  */
@@ -111,8 +111,8 @@ public class WxMenuController {
         button31.setName("车辆绑定");
         button31.setType(MenuButtonType.VIEW);
 
-        button31.setUrl("http://litaolin.nat300.top/oauth2/wx72c8bfbb4f8fc348/bingingCar");
-
+        button31.setUrl("http://www.bjmot.cn/oauth2/wx72c8bfbb4f8fc348/bingingCar");
+        System.out.println("车辆绑定地址:"+button31.getUrl());
 //        WxMenuButton button33 = new WxMenuButton();
 //        button33.setName("年检历史");
 
@@ -126,7 +126,7 @@ public class WxMenuController {
 
         this.wxService.switchover(appid);
         String s = this.wxService.getMenuService().menuCreate(menu);
-        System.out.println(s);
+        System.out.println("菜单："+s);
         return s;
     }
 
