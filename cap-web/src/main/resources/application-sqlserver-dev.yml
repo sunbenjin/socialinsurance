@@ -49,14 +49,14 @@ pagehelper:
     supportMethodsArguments: true
     params: count=countSql
 
-capsp:
+socialinsurance:
   uploadPath: ./file/
   isDayType: false
 
   imagePath: ./image/
 
 logging:
-  file: ./logs/capsp-log.log
+  file: ./logs/socialinsurance-log.log
   level:
     com.capinfo.mapper: debug
 

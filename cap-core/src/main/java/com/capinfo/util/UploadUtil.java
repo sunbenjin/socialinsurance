@@ -29,15 +29,15 @@ public class UploadUtil {
     /**
      * 按照当日创建文件夹
      */
-    @Value("${capsp.isDayType}")
+    @Value("${socialinsurance.isDayType}")
     private boolean isDayType;
     /**
      * 自定义文件路径
      */
-    @Value("${capsp.uploadPath}")
+    @Value("${socialinsurance.uploadPath}")
     private String uploadPath;
 
-    @Value("${capsp.imagePath}")
+    @Value("${socialinsurance.imagePath}")
     private String imagePath;
 
     public static final String IMAGE_SUFFIX = "bmp,jpg,png,gif,jpeg";

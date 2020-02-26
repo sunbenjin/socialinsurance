@@ -32,9 +32,9 @@ import java.util.Locale;
 @Configuration
 public class WebMvcConfig extends WebMvcConfigurationSupport {
 
-    @Value("${capsp.imagePath}")
+    @Value("${socialinsurance.imagePath}")
     private String imagePath;
-    @Value("${capsp.uploadPath}")
+    @Value("${socialinsurance.uploadPath}")
     private String filePath;
 
     @Bean

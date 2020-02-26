@@ -249,7 +249,7 @@ public class MqTestController {
     }
 
 
-    @Scheduled(fixedRate = 60000)
+   // @Scheduled(fixedRate = 60000)
     public void sendOrdinaryQueue() {
         //测试
         List<String> roleList = new ArrayList<String>();
